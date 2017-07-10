@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">newsToutiao</string>
+    <string name="bar_title">今日头条</string>
+    <string name="index">首页</string>
+    <string name="video">视频</string>
+    <string name="news">微头条</string>
 </resources>
