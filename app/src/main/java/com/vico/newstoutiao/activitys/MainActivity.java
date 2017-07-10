@@ -1,7 +1,9 @@
-package com.vico.newstoutiao;
+package com.vico.newstoutiao.activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.vico.newstoutiao.R;
 
 public class MainActivity extends AppCompatActivity {
 
