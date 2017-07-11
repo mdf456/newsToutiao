@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+
+
+    >
 
     <TextView
-        android:text="这是小视频页面"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    android:text="这是小视频页面"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    />
+
+    <TextView
+        android:text="我是pcw"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        />
+
 </LinearLayout>
