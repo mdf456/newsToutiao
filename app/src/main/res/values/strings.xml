@@ -12,9 +12,4 @@
     <string name="年龄">年龄</string>
     <string name="gender">性别</string>
     <string name="submit">提交</string>
-    <string name="notEmpty">账号密码不能为空</string>
-    <string name="error">账号密码错误</string>
-    <string name="exit">用户名已经存在</string>
-    <string name="regist_success">注册成功</string>
-    <string name="regist_fail">注册不成功</string>
 </resources>
