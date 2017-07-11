@@ -20,11 +20,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <CheckBox
+        android:id="@+id/remember_pwd"
         android:text="@string/rem_pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/imgbtn_regist"
+        android:id="@+id/btn_regist"
         android:text="@string/regist"
         android:background="@color/colorAccent"
         android:layout_width="wrap_content"

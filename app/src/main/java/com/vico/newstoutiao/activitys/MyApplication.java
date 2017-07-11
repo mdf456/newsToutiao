@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.vico.newstoutiao.utils.VolleyUtil;
 
 /**
  * Created by ${Vico} on 2017/7/11.
@@ -20,5 +21,11 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
          requestQueue = Volley.newRequestQueue(getApplicationContext());
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        requestQueue.cancelAll(VolleyUtil.VOLLEY_TAG);
     }
 }
