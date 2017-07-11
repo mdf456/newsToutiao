@@ -64,7 +64,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 
                         @Override
                         public void loginFail(String err) {
-                            Toast.makeText(LoginActivity.this, getResources().getString(R.string.error), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, getResources().getString(R.string.login_error), Toast.LENGTH_SHORT).show();
                         }
                     });
 

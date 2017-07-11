@@ -12,4 +12,6 @@
     <string name="年龄">年龄</string>
     <string name="gender">性别</string>
     <string name="submit">提交</string>
+    <string name="notEmpty">账号或密码不能为空</string>
+    <string name="login_error">登录失败</string>
 </resources>
