@@ -12,4 +12,8 @@
     <string name="年龄">年龄</string>
     <string name="gender">性别</string>
     <string name="submit">提交</string>
+    <string name="xsp_show_bt1">播放</string>
+    <string name="xsp_show_bt2">暂停</string>
+    <string name="xsp_show_bt3">继续</string>
+    <string name="xsp_show_bt4">重播</string>
 </resources>
