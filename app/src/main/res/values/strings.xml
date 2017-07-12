@@ -14,4 +14,7 @@
     <string name="submit">提交</string>
     <string name="notEmpty">账号或密码不能为空</string>
     <string name="login_error">登录失败</string>
+    <string name="exit">账号已经存在</string>
+    <string name="regist_success">注册成功</string>
+    <string name="regist_fail">注册失败</string>
 </resources>
