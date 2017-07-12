@@ -24,6 +24,14 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     private Button mLogin;
     private CheckBox isRemember;
     private Button mRegist;
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        MyApplication.getRequestQueue().cancelAll(VolleyUtil.VOLLEY_TAG);
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
