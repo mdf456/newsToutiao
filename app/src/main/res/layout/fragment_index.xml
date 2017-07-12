@@ -1,10 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <TextView
-        android:text="这是首页页面"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#FF0000"
+        >
+        <ImageView
+            android:id="@+id/image_iv1"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+        <EditText
+            android:layout_toRightOf="@+id/image_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:hint="我的世界|外星人的视频|铲车挖掘机"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D33C3C"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/tablayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            ></TableLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>
