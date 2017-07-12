@@ -1,9 +1,9 @@
 package com.vico.newstoutiao.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +12,8 @@ import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
 import com.vico.newstoutiao.R;
-
-import org.xmlpull.v1.XmlPullParser;
+import com.vico.newstoutiao.activitys.XspActivity;
+import com.vico.newstoutiao.activitys.xsp_bf_Activity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,15 +22,15 @@ import java.util.List;
 public class fragment_small_video extends Fragment implements AdapterView.OnItemClickListener {
     private View view;
     private GridView gv;
-    private List<HashMap<String, Object>> list;
-    private String[] names = {"text1", "text2", "text3", "text4"};
+    private List<HashMap<String,Object>> list;
 
     @Override
-    public View onCreateView(LayoutInflater inflater,
-                             @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.i("ShouyeFragment","onCreateView()...");
-        if(view == null) {
-            view = inflater.inflate(R.layout.fragment_small_video_gv, container, false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
+
+        if (view == null){
+            view = inflater.inflate(R.layout.fragment_small_video,container,false);
+
         }
         initView(view);
         return view;
@@ -38,40 +38,41 @@ public class fragment_small_video extends Fragment implements AdapterView.OnItem
 
     private void initView(View v) {
         initData();
-
-        gv = (GridView) v.findViewById(R.id.shouye_gridview);
-        String[] from = {"image","text"};
-        int[] to = {R.id.item_shouye_img, R.id.item_shouye_name};
+        gv = (GridView) v.findViewById(R.id.small_video_gv);
+        String[] from = {"image"};
+        int[] to = {R.id.xsp_img};
         gv.setAdapter(new SimpleAdapter(view.getContext(),list,R.layout.fragment_small_video_gv,from,to));
         gv.setOnItemClickListener(this);
+
     }
 
     private void initData() {
-        list = new ArrayList<>();
+        list = new ArrayList<HashMap<String, Object>>();
         int[] icons = {
-                R.mipmap.xsq_text,
-                R.mipmap.xsq_text,
-                R.mipmap.xsq_text,
-                R.mipmap.xsq_text,
-    };
-        for (int i = 0; i < icons.length; i++) {
+                R.mipmap.xsp_img1,
+                R.mipmap.xsp_img1,
+                R.mipmap.xsp_img1,
+                R.mipmap.xsp_img1,
+                R.mipmap.xsp_img1,
+                R.mipmap.xsp_img1,
+                R.mipmap.xsp_img1,
+                R.mipmap.xsp_img1,
+        };
+        for (int i =0;i<icons.length;i++){
             HashMap<String, Object> map = new HashMap<String, Object>();
             map.put("image", icons[i]);
-            map.put("text",names[i]);
             list.add(map);
         }
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
+    public void onDestroyView() {
+        super.onDestroyView();
         ((ViewGroup)view.getParent()).removeView(view);
     }
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Log.i("ShouyeFragment","...name:" + position);
+        Intent intent = new Intent(fragment_small_video.this.getActivity(),xsp_bf_Activity.class);
+        startActivity(intent);
     }
-
-
 }

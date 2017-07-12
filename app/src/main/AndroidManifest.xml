@@ -21,6 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activitys.RegistActivity"/>
+        <activity android:name=".activitys.xsp_bf_Activity"/>
+        <activity android:name=".activitys.XspActivity"/>
     </application>
 
 </manifest>
