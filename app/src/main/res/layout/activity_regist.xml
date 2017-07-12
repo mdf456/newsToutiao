@@ -5,12 +5,12 @@
               android:layout_height="match_parent">
     <EditText
         android:id="@+id/et_account"
-        android:hint="@string/account"
+        android:hint="@string/z"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/et_pwd"
-        android:hint="@string/pwd"
+        android:hint="@string/m"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
@@ -26,7 +26,7 @@
     <Button
         android:id="@+id/btn_submit"
         android:hint="@string/submit"
-        android:background="@color/colorAccent"
+        android:background="@color/colorBule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
