@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.vico.newstoutiao.R;
 import com.vico.newstoutiao.utils.VolleyUtil;
 
