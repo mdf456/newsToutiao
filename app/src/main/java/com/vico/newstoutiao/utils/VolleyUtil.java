@@ -1,7 +1,6 @@
 package com.vico.newstoutiao.utils;
 
 import android.util.Log;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;

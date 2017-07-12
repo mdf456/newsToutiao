@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-
 import com.vico.newstoutiao.R;
 import com.vico.newstoutiao.fragments.fragment_index;
 import com.vico.newstoutiao.fragments.fragment_news;
